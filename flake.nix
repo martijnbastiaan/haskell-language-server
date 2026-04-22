@@ -74,6 +74,8 @@
             curl
             # Changelog tooling
             (gen-hls-changelogs hpkgs)
+            # https://discourse.nixos.org/t/non-interactive-bash-errors-from-flake-nix-mkshell/33310
+            pkgs.bashInteractive
             # For the documentation
             pythonWithPackages
             (pkgs.haskell.lib.justStaticExecutables (pkgs.haskell.lib.dontCheck pkgs.haskellPackages.opentelemetry-extra))

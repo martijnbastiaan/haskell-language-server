@@ -41,6 +41,7 @@ constraints:
   -- in the future, thus: TODO: remove this flag.
   bitvec -simd,
   monad-control >=1.0.3,
+  zlib +bundled-c-zlib,
 
 
 -- Some of the formatters need the latest Cabal-syntax version,
